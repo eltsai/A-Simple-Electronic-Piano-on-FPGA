@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module WaterLight(       //æµæ°´ç¯æ¨¡å—
+module WaterLight(       //Á÷Ë®µÆÄ£¿é
     input           beat,
     input     [3:0] func,
     output reg[7:0] L,

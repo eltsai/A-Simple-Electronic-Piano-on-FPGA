@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Temp\ElectronicPiano_With_PS2Keyboard\top.ncd
+OUTFILE=D:\Temp\ElectronicPiano_With_PS2Keyboard\top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\Temp\ElectronicPiano_With_PS2Keyboard
+LICENSE=WebPack
+USER_INFO=211247891_0_0_036

@@ -13,7 +13,7 @@ begin
 	 if(!rst_n)
 		 ps2_asci <= 8'h0;
     else begin
-	 case (data)                    //é”®å€¼è½¬æ¢ä¸ºASCIIç ï¼Œè¿™é‡Œåšçš„æ¯”è¾ƒç®€å•ï¼Œåªå¤„ç†å­—æ¯
+	 case (data)                    //¼üÖµ×ª»»ÎªASCIIÂë£¬ÕâÀï×öµÄ±È½Ï¼òµ¥£¬Ö»´¦Àí×ÖÄ¸
        8'h58: {med_ma,low_ma} <= 8'h01;    //CAPSLOCK     
        8'h1c: {med_ma,low_ma} <= 8'h02;   //A
        8'h1b: {med_ma,low_ma} <= 8'h03;   //S

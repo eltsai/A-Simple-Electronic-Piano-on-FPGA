@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module beat(                           //èŠ‚æ‹äº§ç”Ÿæ¨¡å—  
+module beat(                           //½ÚÅÄ²úÉúÄ£¿é  
     input rst_n,
     input clk,
     output reg beat
@@ -11,9 +11,9 @@ reg [24:0] cnt = 25'h0;
 
 always@(posedge clk or negedge rst_n)
 begin
-    if(~rst_n)                           //å…³æœºæ—¶
+    if(~rst_n)                           //¹Ø»úÊ±
 	     cnt <= 25'h0;
-	 else if(cnt == 25'd12_499_999)       //å¼€æœºæ—¶
+	 else if(cnt == 25'd12_499_999)       //¿ª»úÊ±
 	     cnt <= 25'h0;
 	 else 
 	     cnt <= cnt + 25'h1;
@@ -26,7 +26,7 @@ begin
 	 else if(cnt == 25'd12_499_999)
 	     beat <=1'b1;
 	 else
-	     beat <= 1'b0;                //æ¯1/4ç§’ä¸€ä¸ªä¸Šå‡æ²¿
+	     beat <= 1'b0;                //Ã¿1/4ÃëÒ»¸öÉÏÉıÑØ
 end 
 
 endmodule

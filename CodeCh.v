@@ -12,7 +12,7 @@ module CodeCh(
 reg [3:0] cnt = 1;
 reg       sign = 0;
 
-always@(posedge rst_n )     //å¼€æœºé—®å€™
+always@(posedge rst_n )     //¿ª»úÎÊºò
     begin
        sign <= 1;
     end
